@@ -10,11 +10,28 @@
 </head>
 <body class="text-center">
     <h1>Event niye khelbo ey practice session e </h1>
-    <button type="button" onclick="alert('Warning!!! Page will be Green')" class="btn mb-3 mt-3 btn-success">Green Alo</button><br>
-    <button type="button" onclick="console.log('Red Page')" class="btn btn-outline-danger">Red Light</button>
+    <!-- onclick work is added inline -->
+    <h2>Inline onclick button working</h2>
+    <button type="button" id="green-btn" onclick="document.body.style.backgroundColor='green'" class="btn mb-3 mt-3 btn-success">Green Alo</button><br>
+    <button type="button" onclick="document.body.style.backgroundColor='red'" class="btn btn-outline-danger mb-3">Red Light</button><br>
+    <button type="button" onclick="document.body.style.backgroundColor='yellow'" class="btn btn-outline-warning">Page Yellow</button><br>
+
     
-    <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- onclick will be called from js file by calling function name -->
+    <h2>onclick is working by calling function name in onclick event </h2>
+    <button class="btn btn-outline-info mt-3" onclick="makeCyan()" id="cyan">Make Cyan</button><br>
+    <button class="btn btn-outline-danger mt-3" onclick="makeTextPink()">Make pink</button><br>
+
+
+    <!-- here we will give button a id and we will call the function by id in js file and we will add function in the js file to make this button work for this website -->
+    <h2>onclick will be called by id and work will be done in js file</h2>
+    <button class="btn btn-outline-secondary mt-3" id="lightGray">Light Gray</button><br>
+    <button class="btn btn-outline-info mt-3" id="lightBlue">Light Blue</button><br>
+
+
+
+    
+    
     <!-- js added -->
     <script src="event.js"></script>
 </body>
